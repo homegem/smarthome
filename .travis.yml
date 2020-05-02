@@ -1,11 +1,11 @@
-sudo: required
+dist: trusty
 language: java
 
 jdk:
   - oraclejdk8
 
 before_install:
-  - gradle wrapper
+  - chmod a+x gradlew
 
 script:
   - ./gradlew build
