@@ -1,2 +1,4 @@
 rootProject.name = 'smartHome'
-include 'src:sensors:temperature', 'src:sensors:precipitation'
+
+include 'sensors:temperature' 
+include 'sensors:precipitation'
