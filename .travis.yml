@@ -9,6 +9,7 @@ before_install:
 
 script:
   - ./gradlew build
+  - ./gradlew codeCoverageReport
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -18,3 +19,6 @@ cache:
     - "$HOME/.m2/repository"
     - "$HOME/.gradle/caches/"
     - "$HOME/.gradle/wrapper/"
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
