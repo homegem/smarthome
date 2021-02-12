@@ -2,21 +2,11 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="smarthome.data-generation-services.humidity-generator.main" target="11" />
-      <module name="smarthome.data-generation-services.humidity-generator.test" target="11" />
-      <module name="smarthome.data-generation-services.main" target="11" />
-      <module name="smarthome.data-generation-services.temperature-generator.main" target="11" />
-      <module name="smarthome.data-generation-services.temperature-generator.test" target="11" />
-      <module name="smarthome.data-generation-services.test" target="11" />
       <module name="smartHome.main" target="1.8" />
       <module name="smartHome.sensors.precipitation.main" target="11" />
       <module name="smartHome.sensors.precipitation.test" target="11" />
       <module name="smartHome.sensors.temperature.main" target="11" />
       <module name="smartHome.sensors.temperature.test" target="11" />
-      <module name="smarthome.streaming-services.main" target="11" />
-      <module name="smarthome.streaming-services.temperature-stream-processing.main" target="1.8" />
-      <module name="smarthome.streaming-services.temperature-stream-processing.test" target="1.8" />
-      <module name="smarthome.streaming-services.test" target="11" />
       <module name="smartHome.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -11,10 +11,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/data-generation-services" />
+            <option value="$PROJECT_DIR$/data-generation-services/humidity-generator" />
+            <option value="$PROJECT_DIR$/data-generation-services/temperature-generator" />
             <option value="$PROJECT_DIR$/serving-services" />
             <option value="$PROJECT_DIR$/serving-services/api-gateway" />
             <option value="$PROJECT_DIR$/serving-services/naming-server" />
             <option value="$PROJECT_DIR$/serving-services/weather-serving-service" />
+            <option value="$PROJECT_DIR$/streaming-services" />
+            <option value="$PROJECT_DIR$/streaming-services/temperature-stream-processing" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

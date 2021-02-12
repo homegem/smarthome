@@ -1,0 +1,11 @@
+{
+   "namespace":"com.poc.home.smart.models",
+   "type":"record",
+   "name":"TemperatureKey",
+   "fields":[
+        {
+            "name":"source",
+            "type":"string"
+        }
+   ]
+}

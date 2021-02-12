@@ -1,0 +1,19 @@
+{
+   "namespace":"com.poc.home.smart.models",
+   "type":"record",
+   "name":"Temperature",
+   "fields":[
+        {
+            "name":"source",
+            "type":"string"
+        },
+        {
+            "name":"temperature_celsius",
+            "type":"float"
+        },
+        {
+            "name":"temperature_fahrenheit",
+            "type":"float"
+        }
+   ]
+}

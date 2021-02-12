@@ -9,9 +9,9 @@ pluginManagement {
     }
 }
 rootProject.name = 'smarthome'
-//include 'streaming-services:temperature-stream-processing'
-//include 'data-generation-services:humidity-generator'
-//include 'data-generation-services:temperature-generator'
+include 'streaming-services:temperature-stream-processing'
+include 'data-generation-services:humidity-generator'
+include 'data-generation-services:temperature-generator'
 include 'serving-services:api-gateway'
 include 'serving-services:naming-server'
 include 'serving-services:weather-serving-service'
