@@ -1,16 +1,39 @@
-apply plugin: 'java'
-apply plugin: 'jacoco'
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-repositories {
-    mavenCentral()
+plugins {
+    id "io.spring.dependency-management" version "1.0.11.RELEASE"
 }
 
 subprojects {
+
+    group = 'com.poc.home.smart'
+    version = '0.0.1-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'java-library'
+
+    repositories {
+        mavenCentral()
+        jcenter()
+
+        maven {
+            url 'https://packages.confluent.io/maven'
+        }
+    }
+
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.boot:spring-boot-dependencies:2.1.7.RELEASE")
+        }
+    }
+
+}
+
+/*
+subprojects {
         apply plugin: 'jacoco'
 }
+
 
 tasks.register("codeCoverageReport", JacocoReport) {
     // If a subproject applies the 'jacoco' plugin, add the result it to the report
@@ -41,4 +64,8 @@ tasks.register("codeCoverageReport", JacocoReport) {
         // without any external tools
         html.enabled false
     }
+
+
 }
+
+*/
