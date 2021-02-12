@@ -56,17 +56,20 @@ public class StreamEnricher {
 
         return TemperatureKey
                 .newBuilder()
-                .setSource("hello") // TODO
+                .setSource(dataSourceName)
                 .build();
     }
 
     protected Temperature convertValueToAvro(String value) {
 
+        //TODO convert value and get celcius
+        float temp = 24.9f;
+
         // get directly, because checked data validity in previous steps.
         return Temperature.newBuilder()
-                .setSource("hello") // TODO
-                .setTemperatureCelsius(0) // TODO
-                .setTemperatureFahrenheit(0) // TODO
+                .setSource(dataSourceName)
+                .setTemperatureCelsius(temp)
+                .setTemperatureFahrenheit((float) ((9.0/5.0)*temp + 32))
                 .build();
     }
 }
